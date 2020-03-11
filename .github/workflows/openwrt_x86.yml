@@ -7,13 +7,12 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-CI
+name: OpenWrt_x86
 
 on:
-  push:
-    branches: 
-      - master
-  #     ↑↑↑ 改成你的分支名, 一般是master
+  #push:
+    #branches: 
+      #- master
   # schedule:
   #   - cron: 0 20 * * *
   # release:
@@ -28,7 +27,6 @@ jobs:
         uses: actions/checkout@master
         with:
           ref: master
-        #      ↑↑↑ 改成你的分支名, 一般是master
 
       - name: Initialization environment
         env:
